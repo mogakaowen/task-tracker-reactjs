@@ -17,6 +17,7 @@ const Header = ({ title, onAdd, showAdd }) => {
           onClick={onAdd}
         />
       )}
+      {/* // if location is home page, show button i.e useLocation hook from React Router to conditionally render a button based on the current path. */}
     </header>
   );
 };
