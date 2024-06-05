@@ -43,7 +43,8 @@ function App() {
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(task),
     });
-    console.log("added task", task);
+    const addedTask = await res.json();
+    console.log("added task", addedTask);
     const id = Math.floor(Math.random() * 10000) + 1;
     const newTask = { id, ...task };
     setTasks([...tasks, newTask]);
